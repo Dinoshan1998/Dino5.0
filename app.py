@@ -2,7 +2,7 @@ import os
 import numpy as np
 import streamlit as st
 
-from dotenv import load_dotenv
+
 from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
 import faiss
@@ -15,7 +15,7 @@ from tavily import TavilyClient
 # LOAD ENVIRONMENT VARIABLES
 # =========================================================
 
-load_dotenv()
+
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
